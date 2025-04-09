@@ -1,0 +1,31 @@
+Atributos de generator_llm:
+{'cache': None,
+ 'is_finished_parser': None,
+ 'langchain_llm': ChatNVIDIA(base_url='https://integrate.api.nvidia.com/v1', model='mistralai/mixtral-8x7b-instruct-v0.1'),
+ 'multiple_completion_supported': False,
+ 'run_config': RunConfig(timeout=180,
+                         max_retries=10,
+                         max_wait=60,
+                         max_workers=16,
+                         exception_types=(<class 'Exception'>,),
+                         log_tenacity=False,
+                         seed=42)}
+
+Atributos de generator_llm.langchain_llm:
+{'base_url': 'https://integrate.api.nvidia.com/v1',
+ 'cache': None,
+ 'callback_manager': None,
+ 'callbacks': None,
+ 'custom_get_token_ids': None,
+ 'disable_streaming': False,
+ 'max_tokens': 1024,
+ 'metadata': None,
+ 'model': 'mistralai/mixtral-8x7b-instruct-v0.1',
+ 'name': None,
+ 'rate_limiter': None,
+ 'seed': None,
+ 'stop': None,
+ 'tags': None,
+ 'temperature': None,
+ 'top_p': None,
+ 'verbose': False}
