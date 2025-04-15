@@ -1,15 +1,3 @@
-## Hugginface TOKEN:
-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
-
-## RAGAS APP TOKEN
-apt.44d7-55ca6e4e5ccd-d4a1-906b-0f447f55-80b6b
-
-## Gemini API KEY
-AIzaSyAraw-rVBmkhQlwOvKJINKossrD9OFal4Y
-
-## NVIDIA API KEY
-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
-
 
 ## Verificación básica: uso de GPU con nvidia-smi
 # Ejecuta el siguiente comando mientras haces una inferencia con Ollama:
@@ -179,7 +167,7 @@ wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/
 sudo dpkg -i cuda-keyring_1.1-1_all.deb
 sudo apt-get update
 sudo apt-get -y install cuda-toolkit-12-6
-export TOGETHER_API_KEY=d289774b15836ee30a5509e36366c9f72cf9966f5409cbe2e23b1869ba46e687
+export TOGETHER_API_KEY=
 
 # 2. Configurar la variable CUDAToolkit_ROOT:
 export CUDAToolkit_ROOT=/usr/local/cuda
@@ -221,7 +209,7 @@ else:
 # pip install -U langchain-community
 # pip install huggingface_hub
 # huggingface-cli login
-# Hugginface token: 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
+# Hugginface token: hf_
 # huggingface-cli whoami
 
 # Descargar el modelo directamente de hugginface:
@@ -265,14 +253,14 @@ llama model download --source meta --model-id  MODEL_ID
 Llama 3.1: 405B, 70B & 8B
 When the script asks for your unique custom URL, please paste the URL below
 URL
-https://llama3-1.llamameta.net/*?Policy=eyJTdGF0ZW1lbnQiOlt7InVuaXF1ZV9oYXNoIjoiZWdpenkwODk2NmI4OHVxb2NlNnB0enVwIiwiUmVzb3VyY2UiOiJodHRwczpcL1wvbGxhbWEzLTEubGxhbWFtZXRhLm5ldFwvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcyOTQyNzAwNn19fV19&Signature=ed3ujlGL6IgWv-K8FDk%7EwRtNIHbi03505sN29YF1f5Ezzoy8%7EquUB3DPNugD0XLSB0jUs7ENMfKcWmOaDRK8b4HwP24adUAXDJrNSkSTDsAFGkgYOw0QnFywgE0DBpkhDEW8FNVj-R3cNYq%7EvYaFgDqAMJIDpzbC9Hl73vLSDGF837NHgiiJ2hU9k-s1fELTNvHf8vj4kl6eZZT3f%7EaWUHRWHPERbTPSME9uRt9RfZbQ7ENXEFnR5eyjOljWhJ5oXNmdHDWOJcOq%7EnMbld5gqMGxpw4kpaE-i96JJZs8OQjszsx-80pV49cCdGrKvMjMHqWNQaw23z4pTMiNQzfcKg__&Key-Pair-Id=K15QRJLYKIFSLZ&Download-Request-ID=1180375143028929
+https://llama3-1.llamameta.net/*?Policy=
 
 Please save copies of the unique custom URLs provided above, they will remain valid for 48 hours to download each model up to 5 times, and requests can be submitted multiple times. An email with the download instructions will also be sent to the email address you used to request the models.
 
 ## #######################################################################################################
 # 1.New key created:
-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 
-key-RAGAS: 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
+lsv2_pt_
+key-RAGAS: lsv2_pt_
 
 # 2. Install dependencies
 pip install -U langchain langchain-openai
@@ -282,7 +270,7 @@ pr-gargantuan-nothing-25
 
 LANGCHAIN_TRACING_V2=true
 LANGCHAIN_ENDPOINT="https://api.smith.langchain.com"
-LANGCHAIN_API_KEY="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"
+LANGCHAIN_API_KEY="lsv2_pt_"
 LANGCHAIN_PROJECT="pr-gargantuan-nothing-25"
 
 # 4. Run any LLM, Chat model, or Chain. Its trace will be sent to this project.
