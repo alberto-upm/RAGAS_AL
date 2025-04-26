@@ -1,3 +1,25 @@
+python -m vllm.entrypoints.openai.api_server --model explodinggradients/Ragas-critic-llm-Qwen1.5-GPTQ
+
+python -m vllm.entrypoints.openai.api_server --model mistralai/Mistral-7B-Instruct-v0.2 --dtype auto --api-key EMPTY
+# Lanzar, por ejemplo, Mistral-7B-Instruct
+python -m vllm.entrypoints.openai.api_server \
+       --model mistralai/Mistral-7B-Instruct-v0.2 \
+       --dtype auto --port 8000 --api-key EMPTY
+
+python -m vllm.entrypoints.openai.api_server \
+       --model mistralai/Mistral-7B-Instruct-v0.2 \
+       --dtype auto --port 8000 --api-key EMPTY
+
+## Lo he conseguido con el mismo modelo que utilizaba en DEEPEVAL
+vllm serve NousResearch/Meta-Llama-3-8B-Instruct \
+    --port 8000 --dtype float16 --max-model-len 4096
+
+### para sabaner si está funcionando: 
+curl http://localhost:8000/v1/models
+
+## Herramienta para formatear squemas: pip install outlines
+https://github.com/dottxt-ai/outlines
+
 
 ## Verificación básica: uso de GPU con nvidia-smi
 # Ejecuta el siguiente comando mientras haces una inferencia con Ollama:
